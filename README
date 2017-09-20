@@ -1,0 +1,14 @@
+# XGBoost Stack
+
+This image creates a stack for use with nvidia-docker that builds on the 
+CUDA stack and adds Intel's Python 3 distribution as well as numpy, pandas, 
+joblib, and scikit-learn in order to have a robust base for running XGBoost 
+efficiently with both MKL optimized math operations and the ability to use a 
+GPU for running XGBoost itself.
+
+## Using this image
+In order for this image to work properly, you must use nvidia-docker instead 
+of just using docker.
+
+When using this as a base image, the default entrypoint is an executable 
+located at `/app/sh/entrypoint.sh`.
